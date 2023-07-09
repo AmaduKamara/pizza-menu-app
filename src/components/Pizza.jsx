@@ -5,7 +5,7 @@ const Pizza = ({ data }) => {
   return (
     <div>
       <img src={photoName} alt="" />
-      <h2>{name}</h2>
+      <h3>{name}</h3>
       <p>{ingredients}</p>
       <p>{price}</p>
     </div>
