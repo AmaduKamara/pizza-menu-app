@@ -1,7 +1,7 @@
 import React from "react";
 
-const Pizza = ({ data }) => {
-  const { photoName, name, ingredients, price } = data;
+const Pizza = ({ pizza }) => {
+  const { photoName, name, ingredients, price } = pizza;
   return (
     <div>
       <img src={photoName} alt="" />
