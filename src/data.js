@@ -1,5 +1,3 @@
-import Pizza from "./components/Pizza";
-
 const pizzaData = [
   {
     name: "Focaccia",
@@ -44,14 +42,3 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-
-const App = () => {
-  return (
-    <>
-      <h1>Pizza App</h1>
-      {pizzaData.map(data => <Pizza data={data} />)} 
-    </>
-  )
-}
-
-export default App;
