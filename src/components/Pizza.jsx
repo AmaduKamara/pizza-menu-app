@@ -3,12 +3,14 @@ import React from "react";
 const Pizza = ({ pizza }) => {
   const { photoName, name, ingredients, price } = pizza;
   return (
-    <div>
+    <li className="pizza">
       <img src={photoName} alt="" />
-      <h3>{name}</h3>
-      <p>{ingredients}</p>
-      <p>{price}</p>
-    </div>
+      <div>
+        <h3>{name}</h3>
+        <p>{ingredients}</p>
+        <p>{price}</p>
+      </div>
+    </li>
   );
 };
 
