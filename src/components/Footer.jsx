@@ -1,4 +1,6 @@
 import React from "react";
+import FooterOpen from "./FooterOpen";
+import FooterClose from "./FooterClose";
 
 const Footer = () => {
   const hour = new Date().getHours();
@@ -9,17 +11,34 @@ const Footer = () => {
   // if (hour >= openHour && hour <= closeHour) alert("We're currently open");
   // else alert("Sorry, we're closed!");
 
+  // if (!isOpen) {
+  //   return (
+  //     <footer className="footer">
+  //       <p>
+  //         We're happy toto to welcome you between {openHour}:00 and {closeHour}
+  //         :00.
+  //       </p>
+  //     </footer>
+  //   );
+  // }
+
+  // return (
+  //   <footer className="footer">
+  //     {
+  //       <div className="order">
+  //         <p>We're open until {closeHour}:00. Come visit us or order online.</p>
+  //         <button className="btn">Order</button>
+  //       </div>
+  //     }
+  //   </footer>
+  // );
+
   return (
     <footer className="footer">
       {isOpen ? (
-        <div className="order">
-          <p>We're open until {closeHour}:00. Come visit us or order online.</p>
-          <button className="btn">Order</button>
-        </div>
+        <FooterOpen closeHour={closeHour} />
       ) : (
-        <p>
-          We're happy to welcome you between {openHour}:00 and {closeHour}:00.
-        </p>
+        <FooterClose openHour={openHour} closeHour={closeHour} />
       )}
     </footer>
   );
