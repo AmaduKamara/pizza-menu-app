@@ -4,7 +4,7 @@ import FooterClose from "./FooterClose";
 
 const Footer = () => {
   const hour = new Date().getHours();
-  const openHour = 9;
+  const openHour = 8;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
 
@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       {isOpen ? (
-        <FooterOpen closeHour={closeHour} />
+        <FooterOpen openHour={openHour} closeHour={closeHour} />
       ) : (
         <FooterClose openHour={openHour} closeHour={closeHour} />
       )}
