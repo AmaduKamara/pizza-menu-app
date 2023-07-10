@@ -4,7 +4,7 @@ import Pizza from "./Pizza";
 import pizzaData from "../data";
 
 const Menu = () => {
-  const pizzas = [];
+  const pizzas = pizzaData
   const numPizzas = pizzas.length;
 
   return (
