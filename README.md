@@ -1,6 +1,6 @@
 # Pizza-Menu
 
-> The app displays Pizza Menu list of foods
+> The app displays a Pizza Menu list of foods
 
 
 ## Built With
@@ -21,4 +21,4 @@
 - `npm install`
 - `npm start`
 
-<img width="1269" alt="Screenshot 2023-07-17 at 5 31 48 PM" src="https://github.com/AmaduKamara/pizza-menu-app/assets/50941074/c56e92ee-9c70-4042-b3de-c8175818507c">
+<img width="1502" alt="Screenshot 2023-07-26 at 10 32 01 AM" src="https://github.com/AmaduKamara/pizza-menu-app/assets/50941074/6a6c0460-e76d-421d-a051-1dd4a94a4874">
